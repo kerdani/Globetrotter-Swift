@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fsO-U4-vMA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New View Controller-->
+        <scene sceneID="LPg-PI-OAr">
+            <objects>
+                <viewController id="fsO-U4-vMA" customClass="NewViewController" customModule="Globetrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0rv-BM-WAr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZl-sv-63Y">
+                                <rect key="frame" x="0.0" y="621" width="375" height="46"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jog-6E-ubV">
+                                        <rect key="frame" x="8" y="8" width="206" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKj-IY-VP5">
+                                        <rect key="frame" x="328" y="7" width="39" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="Reset:" destination="fsO-U4-vMA" eventType="touchUpInside" id="8jA-ni-ecK"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grA-Ja-sD2" userLabel="count1">
+                                        <rect key="frame" x="240" y="8" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ei-L6-v76">
+                                        <rect key="frame" x="265" y="2" width="36" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="send:" destination="fsO-U4-vMA" eventType="touchUpInside" id="y00-4k-CHn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqR-rn-NFn" userLabel="count2">
+                                        <rect key="frame" x="222" y="5" width="21" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fW-59-l0a">
+                                        <rect key="frame" x="309" y="0.0" width="26" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cairo"/>
+                                        <connections>
+                                            <action selector="cairo:" destination="fsO-U4-vMA" eventType="touchUpInside" id="KeJ-aR-OyP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="flp-ek-KDs"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oqq-nS-kmK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="594"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5N-Ub-3ZC">
+                                <rect key="frame" x="320" y="602" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Help"/>
+                                <connections>
+                                    <action selector="Help:" destination="fsO-U4-vMA" eventType="touchUpInside" id="NxS-rE-kX5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QZl-sv-63Y" firstAttribute="bottom" secondItem="0rv-BM-WAr" secondAttribute="bottom" id="5Yg-cV-BeD"/>
+                            <constraint firstItem="oqq-nS-kmK" firstAttribute="trailing" secondItem="QZl-sv-63Y" secondAttribute="trailing" id="Cte-gw-nyn"/>
+                            <constraint firstItem="oqq-nS-kmK" firstAttribute="top" secondItem="0rv-BM-WAr" secondAttribute="top" id="J8i-bH-2JE"/>
+                            <constraint firstAttribute="trailing" secondItem="QZl-sv-63Y" secondAttribute="trailing" id="dQq-hV-beR"/>
+                            <constraint firstItem="oqq-nS-kmK" firstAttribute="leading" secondItem="QZl-sv-63Y" secondAttribute="leading" id="fkq-3M-qkx"/>
+                            <constraint firstItem="QZl-sv-63Y" firstAttribute="top" secondItem="oqq-nS-kmK" secondAttribute="bottom" constant="8" symbolic="YES" id="uEy-fb-Drg"/>
+                            <constraint firstItem="QZl-sv-63Y" firstAttribute="leading" secondItem="0rv-BM-WAr" secondAttribute="leading" id="uOl-hf-lP4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RcF-Pk-gwt"/>
+                    </view>
+                    <connections>
+                        <outlet property="count1" destination="grA-Ja-sD2" id="o31-GI-djv"/>
+                        <outlet property="count2" destination="VqR-rn-NFn" id="G6a-B7-X8c"/>
+                        <outlet property="keyboardHeightLayoutConstraint" destination="5Yg-cV-BeD" id="XIG-Yv-n0W"/>
+                        <outlet property="scrollView" destination="oqq-nS-kmK" id="Sxl-Y5-K1y"/>
+                        <outlet property="userInput" destination="Jog-6E-ubV" id="fE3-sC-dB3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDA-V5-Moz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="134.48275862068968"/>
+        </scene>
+    </scenes>
+</document>
